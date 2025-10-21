@@ -1,0 +1,48 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url(../assets/Shapes.svg);
+  background-color: #000000;
+  overflow-x: hidden;
+}
+:root {
+  /* fonte */
+  --sora: "Sora", sans-serif;
+  --roboto-mono: "Roboto Mono", monospace;
+  --roboto-flex: "Roboto Flex", sans-serif;
+
+  --h1-title: 800 1.5rem/130% var(--sora);
+  --overline: 700 1rem/150% var(--roboto-mono);
+  --h1-lg: 800 2.5rem/130% var(--sora);
+  --h2-md: 600 1.25rem/150% var(--roboto-flex);
+  --p: 400 0.875rem/150% var(--roboto-flex);
+  --p-md: 700 1rem/150% var(--roboto-flex);
+  --h1-sm: 700 2rem/130% var(--sora);
+  --result: 800 3rem/150% var(--roboto-mono);
+
+  --h1-md: 800 2.5rem/130% var(--sora);
+
+  --bg-primary: #020202;
+  --bg-secondary: #111012;
+  --bg-tertiary: #24222e;
+  --bg-brand: #c58de7;
+  --bg-gray: #3d3d3d;
+
+  /* texto */
+  --text-primary: #ffffff;
+  --text-secondary: #c7c9cc;
+  --text-tertiary: #D9D9D9;
+}
+
+@media (width >= 80em) {
+  :root {
+    --h1-logo: 800 1.5rem/130% var(--sora);
+    --overline: 700 1rem/150% var(--roboto-mono);
+    --h1-lg: 800 4.5rem/130% var(--sora);
+    --p: 500 1rem/150% var(--roboto-flex);
+
+    --h1-md: 800 2.5rem/130% var(--sora);
+    --h1-sm: 700 2rem/130% var(--sora);
+  }
+}

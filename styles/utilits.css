@@ -1,0 +1,44 @@
+.container{
+  --max-width: 375px;
+  max-width: var(--max-width);
+
+  margin-inline: auto;
+}
+
+@media(width >= 80em){
+  .container{
+    --max-width: 80em;
+  }
+}
+
+img{
+  max-width: 100%;
+}
+h1{
+  letter-spacing: -0.04rem;
+}
+h1, h2, p, span{
+  margin: 0;
+}
+
+.flex{
+  display: flex;
+}
+.grid{
+  display: grid;
+}
+.px{
+  margin-inline: 2.125rem;
+}
+.gap-0-12{
+  gap: 0.625rem;
+}
+@media(width >= 80em){
+  .px{
+    margin-inline: 0;
+  }
+}
+
+.disable{
+  display: none;
+}

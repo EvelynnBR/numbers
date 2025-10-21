@@ -1,0 +1,78 @@
+/* Animação genérica para botões*/
+.btn-animation:hover::before {
+  background: linear-gradient(
+    90deg,
+    #77c0af 0%,
+    #d1dc97 15%,
+    #e9a9b3 32%,
+    #e7a6b6 35%,
+    #d586e0 67%,
+    #91a1fa 86%
+  );
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  animation: flowGradient 1000ms ease infinite alternate;
+}
+
+/* Animação para o botão "SORTEAR" */
+.btn:hover {
+  & .img-draw {
+    animation: img-animation 1000ms linear infinite;
+  }
+}
+button:hover {
+  background-color: var(--bg-secondary);
+}
+/* Animando a img da seta do button sortear */
+@keyframes img-animation {
+  20% {
+    transform: translate(0.5rem);
+  }
+  50% {
+    transform: translate(1rem);
+  }
+  80% {
+    transform: translate(0.5rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+/* Animando a cor do button sortear */
+@keyframes flowGradient {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 100% 0%;
+  }
+}
+
+.result-animation {
+  transform: rotate(0deg);
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 24px;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--bg-brand);
+  animation: resultAnimation 1000ms linear 1 backwards;
+}
+
+@keyframes resultAnimation {
+  0% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(190deg);
+    opacity: 1;
+
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+
+  }
+}

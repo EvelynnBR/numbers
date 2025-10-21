@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/Frame.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Sorteador de números</title>
+  </head>
+  <body>
+    <div class="bg-degrader">
+      <main>
+        <header class="container flex gap-0-12 px">
+          <img src="assets/Frame.svg" alt="logo" />
+          <h1>NUMBERS</h1>
+        </header>
+        <section class="container hero grid px">
+          <span>Online - gratuito</span>
+          <h1>
+            SORTEADOR <br />
+            DE NÚMEROS
+          </h1>
+        </section>
+        <section class="container grid luck-box px">
+          <div class="info-box">
+            <h2>Quero sortear:</h2>
+            <p>
+              Defina o intervalo e a quantidade de números, clique em "Sortear"
+              e veja os resultados na tela. É rápido e fácil!
+            </p>
+          </div>
+          <form id="form">
+            <div class="flex numbers">
+              <div class="grid number1">
+                <label for="amount">
+                  NÚMEROS
+                  <div class="border-gradiente">
+                    <input
+                      type="number"
+                      id="amount"
+                      placeholder="2"
+                      class="grid"
+                    />
+                  </div>
+                </label>
+              </div>
+              <div class="grid number2">
+                <label for="from">
+                  DE
+                  <div class="border-gradiente">
+                    <input
+                      type="number"
+                      id="from"
+                      placeholder="1"
+                      class="grid"
+                    />
+                  </div>
+                </label>
+              </div>
+              <div class="grid number3">
+                <label for="to">
+                  DE
+                  <div class="border-gradiente">
+                    <input
+                      type="number"
+                      id="to"
+                      placeholder="100"
+                      class="grid"
+                    />
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="checked flex">
+              <label class="toggle">
+                <input type="checkbox" id="checked" class="toggle-input" />
+                <div class="toggle-body flex">
+                  <div class="toggle-ball"></div>
+                </div>
+              </label>
+              <span>Não repetir número</span>
+            </div>
+            <div class="btn btn-animation">
+              <button id="drawButton" class="flex">
+                SORTEAR
+                <img
+                  class="img-draw"
+                  src="assets/seta-rigth.svg"
+                  alt="setinha para direita"
+                />
+              </button>
+            </div>
+          </form>
+        </section>
+        <section class="container px result disable">
+          <div class="result-text">
+            <h2>RESULTADO DO SORTEIO</h2>
+            <p>1° RESULTADO</p>
+          </div>
+          <div class="result-number flex">
+            <!-- <div class="number-box">
+              <div class="result-animation"></div>
+              <span class="show-result">23</span>
+            </div>  -->
+          </div>
+          <div class="btn btn-animation back-draw disable">
+            <button id="backDraw" class="flex">
+              Sortear novamente
+              <img
+                class="img-draw"
+                src="assets/seta-rigth.svg"
+                alt="setinha para direita"
+              />
+            </button>
+          </div>
+        </section>
+        <section class="container about px">
+          <div class="functionality">
+            <img src="assets/people.svg" alt="people" />
+            <div class="text">
+              <strong>Como funciona o sorteador de números?</strong>
+              <p>
+                O sorteador utiliza um algoritmo de geração aleatória para criar
+                números dentro do intervalo especificado pelo usuário.
+              </p>
+            </div>
+          </div>
+          <div class="functionality">
+            <img src="assets/people.svg" class="grid" alt="people" />
+            <div class="doubt">
+              <strong>Posso escolher o intervalo dos números?</strong>
+              <p>
+                Sim, você pode definir os valores mínimo e máximo para o
+                intervalo dos números sorteados.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
