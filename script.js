@@ -9,7 +9,7 @@ const backDraw = document.querySelector(".back-draw")
 form.addEventListener("submit", (event) => {
   event.preventDefault()
 
-  if ((amount.value === "", from.value === "", to.value === "")) {
+  if ((amount.value === "" || from.value === "" || to.value === "")) {
     alert("Preencha todos os campos!")
     return
   }
